@@ -73,15 +73,6 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    if (session.user.role !== "admin") {
-      return NextResponse.json(
-        {
-          success: false,
-          message: "Only admin can upload songs",
-        },
-        { status: 403 }
-      );
-    }
 
     const body = await request.json();
 

@@ -33,9 +33,6 @@ export default async function AdminFoldersPage() {
     redirect("/login");
   }
 
-  if (session.user.role !== "admin") {
-    redirect("/");
-  }
 
   const folders = await getFolders();
 

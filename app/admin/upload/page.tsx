@@ -66,9 +66,6 @@ export default async function AdminUploadPage() {
     redirect("/login");
   }
 
-  if (session.user.role !== "admin") {
-    redirect("/");
-  }
 
   const [folders, recentSongs] = await Promise.all([
     getFolders(),
@@ -81,7 +78,7 @@ export default async function AdminUploadPage() {
         <Logo />
 
         <Button  variant="outline">
-          <Link href="/admin">
+          <Link href="/admin" className="flex items-center gap-2">
             <ArrowLeft className="h-4 w-4" />
             Back to Admin
           </Link>

@@ -14,10 +14,6 @@ export default async function AdminPage() {
     redirect("/login");
   }
 
-  if (session.user.role !== "admin") {
-    redirect("/");
-  }
-
   return (
     <main className="mx-auto min-h-screen max-w-6xl px-6 py-8">
       <header className="mb-10 flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
