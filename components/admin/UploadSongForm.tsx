@@ -250,7 +250,7 @@ export function UploadSongForm({ folders }: UploadSongFormProps) {
 
             <Select
               value={folderId}
-              onValueChange={setFolderId}
+              onValueChange={(id) => setFolderId(id ?? "")}
               disabled={isUploading}
             >
               <SelectTrigger>

@@ -5,12 +5,7 @@ import { toast } from "sonner";
 import { Loader2 } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   Select,
   SelectContent,
@@ -81,7 +76,10 @@ export function CloudinaryTestForm({ folders }: CloudinaryTestFormProps) {
         <div className="space-y-2">
           <p className="text-sm font-medium">Select Folder</p>
 
-          <Select value={folderPath} onValueChange={setFolderPath}>
+          <Select
+            value={folderPath}
+            onValueChange={(value) => setFolderPath(value ?? "")}
+          >
             <SelectTrigger>
               <SelectValue placeholder="Choose folder" />
             </SelectTrigger>
@@ -122,7 +120,7 @@ export function CloudinaryTestForm({ folders }: CloudinaryTestFormProps) {
                 signaturePreview: `${result.signature.slice(0, 12)}...`,
               },
               null,
-              2
+              2,
             )}
           </pre>
         )}
