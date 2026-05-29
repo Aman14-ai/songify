@@ -34,7 +34,7 @@ export default async function LibraryPage() {
       <header className="mb-10 flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
         <Logo />
         <div className="flex gap-3">
-          <Button asChild variant="outline">
+          <Button   variant="outline">
             <Link className="flex items-center gap-2" href="/login">
               <LogIn className="h-4 w-4" />
               Admin Login
@@ -83,7 +83,7 @@ export default async function LibraryPage() {
                   Once admin creates folders, they will appear here for everyone.
                 </p>
               </div>
-              <Button variant="outline" asChild>
+              <Button variant="outline"  >
                 <Link href="/admin/folders">Create Folder as Admin</Link>
               </Button>
             </CardContent>

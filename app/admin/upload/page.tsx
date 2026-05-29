@@ -162,7 +162,7 @@ export default async function AdminUploadPage() {
                       </div>
 
                       {song.folderSlug && (
-                        <Button asChild size="sm" variant="outline">
+                        <Button   size="sm" variant="outline">
                           <Link href={`/folder/${song.folderSlug}`}>
                             View
                           </Link>

@@ -72,10 +72,10 @@ export default function HomePage() {
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
         <Logo size="sm" />
         <div className="flex items-center gap-3">
-          <Button variant="ghost" size="sm" asChild>
+          <Button variant="ghost" size="sm"  >
             <Link href="/admin">Admin</Link>
           </Button>
-          <Button size="sm" asChild>
+          <Button size="sm"  >
             <Link href="/library">Open Library</Link>
           </Button>
         </div>
@@ -122,12 +122,12 @@ export default function HomePage() {
 
         {/* CTAs */}
         <div className="flex flex-col items-center gap-3 sm:flex-row">
-          <Button size="lg" className="min-w-[160px] text-base shadow-lg shadow-primary/25" asChild>
+          <Button size="lg" className="min-w-[160px] text-base shadow-lg shadow-primary/25"  >
             <Link href="/library">
               Open Library
             </Link>
           </Button>
-          <Button size="lg" variant="outline" className="min-w-[160px] text-base" asChild>
+          <Button size="lg" variant="outline" className="min-w-[160px] text-base"  >
             <Link href="/admin">Admin Dashboard</Link>
           </Button>
         </div>
@@ -202,7 +202,7 @@ export default function HomePage() {
           <h2 className="mb-6 text-3xl font-bold tracking-tight md:text-4xl">
             Start exploring your library
           </h2>
-          <Button size="lg" className="shadow-lg shadow-primary/30" asChild>
+          <Button size="lg" className="shadow-lg shadow-primary/30"  >
             <Link href="/library">Open Library</Link>
           </Button>
         </div>
