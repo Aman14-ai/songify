@@ -36,10 +36,10 @@ export function FolderCard({ folder, index = 0 }: FolderCardProps) {
     <Link
       href={`/folder/${folder.slug}`}
       className={`
-        group flex items-center gap-5 rounded-2xl border px-5 py-4
+        group flex items-center gap-5 rounded-2xl border-t px-3 py-2
         bg-background/50 backdrop-blur transition-all duration-200
         ${color.border} ${color.hover}
-        hover:-translate-y-[1px] hover:shadow-lg
+        hover:-translate-y-px hover:shadow-lg
       `}
     >
       {/* Color number badge */}
