@@ -78,27 +78,29 @@ export default async function FolderDetailsPage({ params }: FolderPageProps) {
     <main className="min-h-screen bg-background text-foreground">
       <div className="mx-auto max-w-5xl px-5 pb-20 pt-6 sm:px-6 lg:px-8">
         {/* Header */}
-        <header className="mb-10 flex items-center justify-between gap-4">
-          <Logo />
+        <header className="mb-10 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+  <div className="flex items-center justify-between">
+    <Logo />
+  </div>
 
-          <div className="flex items-center gap-2">
-            <Link
-              href="/library"
-              className="inline-flex items-center gap-2 rounded-full border bg-background px-4 py-2 text-sm text-muted-foreground transition-all hover:bg-muted hover:text-foreground"
-            >
-              <ArrowLeft className="h-4 w-4" />
-              Library
-            </Link>
+  <div className="grid grid-cols-2 gap-2 sm:flex sm:items-center">
+    <Link
+      href="/library"
+      className="inline-flex items-center justify-center gap-2 rounded-full border bg-background px-4 py-2.5 text-sm text-muted-foreground transition-all hover:bg-muted hover:text-foreground"
+    >
+      <ArrowLeft className="h-4 w-4" />
+      Library
+    </Link>
 
-            <Link
-              href="/admin"
-              className="hidden items-center gap-2 rounded-full border bg-background px-4 py-2 text-sm text-muted-foreground transition-all hover:bg-muted hover:text-foreground sm:inline-flex"
-            >
-              <Settings className="h-4 w-4" />
-              Manage
-            </Link>
-          </div>
-        </header>
+    <Link
+      href="/admin"
+      className="inline-flex items-center justify-center gap-2 rounded-full border bg-background px-4 py-2.5 text-sm text-muted-foreground transition-all hover:bg-muted hover:text-foreground"
+    >
+      <Settings className="h-4 w-4" />
+      Manage
+    </Link>
+  </div>
+</header>
 
 
         {/* Track List */}
